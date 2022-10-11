@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import {Navbar} from "./Components/Navbar/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Dashboard } from './Components/Dashboard/Dashboard';
+import { StatusBar } from "./Components/StatusBar/StatusBar";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid >
+      <Router>
+       <Row>
+        <StatusBar />
+      </Row>
+      
+        <Navbar />
+        <div className="Main">
+          <Routes>
+            <Route exact path="/dashboard" element={<Dashboard />} />
+            <Route exact path="/products" component={<Dashboard />} />
+            <Route exact path="/reports" component={<Dashboard />} />
+          </Routes>
+        </div>
+        
+      </Router>
+      
+    
+    </Container>
   );
 }
 
