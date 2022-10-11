@@ -20,13 +20,15 @@ const options = {
       to: 0,
       loop: true
     }
-  }
+  },
+  responsive: true,
+  maintainAspectRatio: true,
 }
 
 export const CommsChart = () => {
   return (
-    <div>
-      <Doughnut data={data} options={options}/>
+    <div className='mh-100'>
+      <Doughnut data={data} options={options} width={10}/>
     </div>
   )
 }

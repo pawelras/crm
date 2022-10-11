@@ -4,12 +4,10 @@ a.NavBarLink.active > div > svg {
 
 .nav-menu {
     
-    height: 100vh;
     display: flex;
     justify-content: center;
-    /* position: fixed;
-    top: 0; */
-    min-width: 5vw;
+    height: 100%;
+    
     
     
 }
@@ -30,6 +28,7 @@ a.NavBarLink.active > div > svg {
   
 .nav-menu-items {
     width: 100%;
+    height: 100%;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -37,4 +36,7 @@ a.NavBarLink.active > div > svg {
     padding-bottom: 5vh;
 }
 
-  
+.nav-menu-items li a {
+    display: flex;
+    justify-content: center;
+}

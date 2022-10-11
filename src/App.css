@@ -1,15 +1,19 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap'); */
+html {
+  box-sizing: border-box;
+  
+}
 
-/* .Main {
-  margin-left: 5vw;
-  width: 95vw;
-  background-color: #f7f8fa;
-  height: 100vh;
-  padding-top: 5vh;
-  padding-left: 5vw;
-
-} */
 
 .App {
   display: flex;
+}
+.Main {
+  background-color: #f7f8fa;
+}
+
+.Tile {
+  background-color: white;
+  margin: 3rem;
+  padding: 2rem;
+  border-radius: 5px;
 }
