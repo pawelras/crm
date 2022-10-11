@@ -19,7 +19,7 @@ function App() {
     <Container fluid >
       <Router>
       
-       {/*  */}
+      
       <Row style={{height: "100vh"}} >
         <Col xxl={1} xl={1} lg={1} md={2} sm={2} xs={12} className="mh-100">
           <Navbar />
@@ -36,14 +36,7 @@ function App() {
         </Col>
       </Row>
       
-        {/* <Navbar />
-        <div className="Main">
-          <Routes>
-            <Route exact path="/dashboard" element={<Dashboard />} />
-            <Route exact path="/products" component={<Dashboard />} />
-            <Route exact path="/reports" component={<Dashboard />} />
-          </Routes>
-        </div> */}
+        
         
       </Router>  
     </Container>

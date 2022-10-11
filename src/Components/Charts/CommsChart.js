@@ -28,7 +28,7 @@ const options = {
 export const CommsChart = () => {
   return (
     <div className='mh-100'>
-      <Doughnut data={data} options={options} width={10}/>
+      <Doughnut data={data} options={options}/>
     </div>
   )
 }
