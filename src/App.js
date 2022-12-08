@@ -20,11 +20,11 @@ function App() {
       <Router>
       
       
-      <Row style={{height: "100vh"}} >
-        <Col xxl={1} xl={1} lg={1} md={2} sm={2} xs={12} className="mh-100">
+      <Row className="appContainer" >
+        <Col md={1} className="navBar">
           <Navbar />
         </Col>
-        <Col xxl={11} xl={11} LG={11} md={10} sm={10} xs={12} className="mh-100 Main">
+        <Col md={11} className="mh-100 Main">
         <Row style={{height: "5vh"}}>
         <StatusBar />
       </Row>

@@ -34,9 +34,17 @@ a.NavBarLink.active > div > svg {
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 5vh;
+    list-style-type: none;
 }
 
 .nav-menu-items li a {
     display: flex;
     justify-content: center;
+}
+
+.Logo {
+    width: 60px;
+    display: block;
+    margin: auto; 
+    margin-top: 2em;
 }

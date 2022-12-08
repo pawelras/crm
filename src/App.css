@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+
 html {
   box-sizing: border-box;
-  
+    
+}
+
+body {
+  font-family: Arimo!important;
 }
 
 
+a:hover {
+  background-color: transparent!important;
+}
 .App {
   display: flex;
 }
@@ -12,8 +22,28 @@ html {
 }
 
 .Tile {
+  
   background-color: white;
-  margin: 3rem;
+  margin: 2em;
+  margin-bottom: 1em;
   padding: 2rem;
   border-radius: 5px;
+  box-shadow:0px 24px 25px 5px rgba(0,0,0,0.10);
 }
+
+.appContainer {
+  height: 100vh;
+  width:  100vw
+}
+
+.btn-primary {
+  background-color:#00c3f9!important;
+  border-color: #00c3f9!important;
+}
+
+.btn-primary:hover {
+  background-color:rgba(0, 195, 249, 0.7)!important;
+  border-color: rgba(0, 196, 250, 0.7)!important;
+}
+
+
