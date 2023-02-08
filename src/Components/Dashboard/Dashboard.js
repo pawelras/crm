@@ -10,30 +10,50 @@ export const Dashboard = () => {
     return (
 
         
-        <Container fluid className="mh-100 w-100">
+        <Container fluid className="h-90 w-100">
         
             <Row>
-            <h1 style={{marginBottom: "1em", marginTop: "1em", "padding-left": "1em"}}>Your Dashboard</h1>
+            <h1 className="pb-1 mt-1 " style={{marginBottom: "1em", marginTop: "1em", "padding-left": "1em"}}>Your Dashboard</h1>
             </Row>
 
-            <Row >
-                <Col xl={3} className="Tile"> <HitRateChart /></Col>
-                <Col xl={3} className="Tile"><SalesChart /></Col>
-                <Col xl={3} style={{"margin-right": "2em"}}>
-                <Row className="h-50">
-                    
-                    <Col xl={12} className="Tile position-relative">
-                    <Activities />
-                    </Col>
-                </Row>
-                <Row className="h-50">
-                    
-                    <Col xl={12} className="Tile">Activity: 14 calls</Col>
-                </Row>
+            <Row className="h-90">
+                <Col xl={4} className="h-30">
+                    <div className="Tile">
+                    <HitRateChart />
+                    </div>
+                </Col>
+                <Col xl={4} className="h-30">
+                    <div className="Tile">
+                    Tings
+                    </div>
+                </Col>
+
+                <Col xl={4} className="">
+                    <Row className="">
+                        
+                        <Col xl={12} className="position-relative">
+                        <div className="smallTile Tile">
+                        <Activities />
+                        </div>
+                        </Col>
+                    </Row>
+                    <Row className="">
+                        
+                        <Col xl={12} className="">
+                        <div className="smallTile Tile">
+                        Activity: 14 calls
+                        </div>
+                        </Col>
+                    </Row>
 
                 </Col>
-                <Col xl={6} className="Tile"> <SalesChart /></Col>
-                <Col xl={3} className="Tile">Total Sales: £3,600</Col>
+                <Col xl={8} className="h-40 pt-5"> 
+                <div className="Tile"><SalesChart /></div>
+                </Col>
+                <Col xl={4} className="h-30 pt-5">
+                <div className="Tile">
+                Total Sales: £3,600</div></Col>
+                
                 {/* <Col md={3} className="Tile">Activity: 14 calls</Col> */}
                 
                 
